@@ -1,0 +1,77 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* TailwindCSS */
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    @apply bg-gray-950;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white;
+  }
+
+  h1 {
+    @apply text-7xl;
+  }
+
+  h2 {
+    @apply text-6xl;
+  }
+
+  h3 {
+    @apply text-5xl;
+  }
+
+  h4 {
+    @apply text-4xl;
+  }
+
+  h5 {
+    @apply text-3xl;
+  }
+
+  h6 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply text-base text-gray-400;
+  }
+
+  .container {
+    @apply px-4;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient {
+    background: radial-gradient(
+      64.33% 64.33% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

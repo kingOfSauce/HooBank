@@ -1,0 +1,32 @@
+.teaser {
+  @apply relative z-10 p-4;
+
+  .mask {
+    @apply contents;
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      z-index: -10;
+      background: linear-gradient(
+        144deg,
+        #fff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      );
+    }
+  }
+
+  &:hover {
+    .mask {
+      &::after {
+        @apply block;
+      }
+    }
+  }
+}

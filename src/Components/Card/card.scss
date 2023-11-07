@@ -1,0 +1,38 @@
+.card {
+  @apply rounded-xl bg-gray-950 relative;
+
+  .card-body {
+    @apply py-16 px-10 relative;
+  }
+
+  .mask {
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(
+        144deg,
+        #fff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      );
+    }
+  }
+
+  img {
+    @apply w-20 rounded-full;
+  }
+
+  &:hover {
+    .mask {
+      &::after {
+        @apply block;
+      }
+    }
+  }
+}

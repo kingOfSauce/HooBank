@@ -1,0 +1,6 @@
+.section-hero {
+  .badge {
+    @apply inline-flex gap-4 items-center w-auto py-1 px-4 rounded;
+    background: linear-gradient(125deg, #272727 0%, #11101d 100%);
+  }
+}

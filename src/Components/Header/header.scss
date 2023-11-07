@@ -1,0 +1,13 @@
+header {
+  @apply bg-transparent absolute w-full top-8;
+
+  ul {
+    a {
+      @apply text-gray-400 px-7 transition;
+      &.active,
+      &:hover {
+        @apply text-white;
+      }
+    }
+  }
+}

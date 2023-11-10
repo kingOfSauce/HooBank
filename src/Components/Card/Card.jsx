@@ -2,9 +2,9 @@ import './card.scss';
 
 export default function Card({ text, name, jobTitle, imgSrc }) {
   return (
-    <div className='card'>
+    <div className='card h-full'>
       <div className='mask'></div>
-      <div className='card-body'>
+      <div className='card-body flex flex-col justify-between h-full'>
         <svg
           className='mb-10'
           width='43'

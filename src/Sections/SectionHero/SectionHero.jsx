@@ -39,7 +39,7 @@ export default function SectionHero() {
   return (
     <section className='section-hero pt-[127px] relative pb-12 xl:pb-24'>
       <svg
-        className='absolute left-0 top-1/2 -translate-y-1/2 w-[195px] h-[324px]'
+        className='absolute left-0 top-1/2 -translate-y-1/2 w-[195px] h-[324px] hidden xl:block'
         viewBox='0 0 580 1026'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

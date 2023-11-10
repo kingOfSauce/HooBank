@@ -28,7 +28,7 @@ export default function SectionType2(props) {
     <section className='py-12 xl:py-24 relative'>
       {props.isBlink && (
         <svg
-          className='absolute -bottom-64 -left-64 h-full'
+          className='absolute -bottom-64 -left-64 h-full hidden xl:block'
           width='781'
           height='1972'
           viewBox='0 0 781 1972'

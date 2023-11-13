@@ -2,6 +2,7 @@ import Header from './Components/Header/Header';
 import SectionHero from './Sections/SectionHero/SectionHero';
 import SectionType2 from './Sections/Section2/SectionType2';
 import SectionType3 from './Sections/Section3/SectionType3';
+import Footer from './Components/Footer/Footer';
 import { bill, card } from './assets/img/index';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         title='What people are saying about us'
         text='Everything you need to accept card payments and grow your business anywhere on the planet.'
       />
+      <Footer />
     </>
   );
 }

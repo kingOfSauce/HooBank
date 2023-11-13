@@ -66,7 +66,10 @@ export default function Footer() {
                 <ul className='flex flex-col text-gray-400'>
                   {item.list.map((link) => (
                     <li key={link}>
-                      <a href='#' className='py-[12px] block'>
+                      <a
+                        href='#'
+                        className='py-[12px] inline-block hover:text-gray-200 transition'
+                      >
                         {link}
                       </a>
                     </li>
@@ -77,9 +80,9 @@ export default function Footer() {
           </div>
         </div>
         <div className='flex flex-col md:flex-row md:justify-between py-8 gap-8'>
-          <p>
-            Copyright <span className='font-bold me-4'>©</span> 2021 HooBank.
-            All Rights Reserved.
+          <p className='text-sm'>
+            Copyright <span className='font-bold'>©</span> 2021 HooBank. All
+            Rights Reserved.
           </p>
           <div className='flex gap-8'>
             {social.map((item) => (
